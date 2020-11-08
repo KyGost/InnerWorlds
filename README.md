@@ -4,7 +4,7 @@ The code from my old project-- InnerWorlds.
 This is a (progressive) web app for assisting in the management and organisation of DID/OSDD.
 
 ## Quality
-No quality, at all, is guaranteed for this project; code or alike. Regrets, however, are. (haha)
+No quality, at all, is guaranteed for this project; neither for code nor alike. Regrets, however, certainly are. (haha)
 
 ## Continuing the work
 If you want to, feel free to make a fork.
