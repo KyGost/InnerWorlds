@@ -8,7 +8,7 @@ No quality, at all, is guaranteed for this project; neither for code nor alike. 
 
 ## Continuing the work
 If you want to, feel free to make a fork.
-Feel free, too, to then request a PR. If you make a considerable PR, I will likely give you permissions for this repo.
+Feel free, also, to then request a PR. If you make a considerable PR, I will likely give you permissions for this repo.
 I am quite unlikely to merge anything myself.
 
 ## Licence
