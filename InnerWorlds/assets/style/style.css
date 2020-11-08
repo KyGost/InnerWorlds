@@ -1,0 +1,256 @@
+html, body {
+	max-height: 100% !important;
+	overflow: hidden;
+}
+body {
+	background: #D2E6F9;
+	padding: 0;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#HEADER, #FOOTER {
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+/* Header */
+#HEADER {
+	background: #EEEEEE;
+	top: 0;
+	text-align: center;
+	border-bottom: 1px #AAAAAA solid;
+}
+#HEADER * {
+	font-size: 4vh;
+	padding: 1vh;
+	color: #000000;
+	user-select: none;
+}
+#BACKBUTTON {
+	float: left;
+} #FUNCBUTTON {
+	float: right;
+} #MISCELEMENT {
+	vertical-align: middle;
+	font-size: 4vh;
+}
+
+/* Footer */
+#FOOTER {
+	bottom: 0;
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 1vh;
+	padding-top: 1vh;
+}
+
+.navItem {
+	width: 15vw;
+	height: 15vw; /*Should be auto but issues with older chromium*/
+}
+/* General */
+.icon {
+	border-radius: 50%;
+}
+.selected {
+	opacity: 0.5;
+}
+
+*:focus {
+	border: solid 1px blue;
+}
+
+.divButton, .warning {
+	display: block;
+	padding: 2vw;
+	border-bottom: 1px #AAAAAA solid;
+} .divButton {
+	background: #FAFAFA;
+} .divButton.unavailable {
+	background: #FFFFFF;
+	color: #999999;
+} .warning {
+	background: #FFAAAA;
+	text-align: center;
+} .warning:before {
+	content: 'WARNING: ';
+	font-weight: bold;
+}
+/* Widgets */
+#WIDGETS {
+	display: flex;
+	flex-direction: column;
+	max-height: 100% !important;
+	overflow: hidden;
+}
+#WIDGETS > * {
+	width: 96%;
+	margin: 2%;
+	flex-shrink: 1;
+	box-shadow: 1vw 1vh 3vh 2px #888888;
+	overflow-y: auto;
+	flex-direction: column;	
+}
+
+/* Journal */
+#WIDGETS #JOURNAL {
+	background: #FAFAFA;
+} #JOURNAL.fullscreen {
+	margin: 1vh;
+} #JOURNAL.fullscreen .day {
+	margin: 1vh;
+	box-shadow: 0.5vw 0.5vh 1vh 1px #888888;
+} #JOURNAL .day {
+	background: #FAFAFA;
+}
+.journalDay, #JOURNAL .title {
+	text-align: center;
+} .journalDay {
+	background: #E5E5E5;
+	font-size: 3vh;
+	font-weight: bold;
+} #JOURNAL .title {
+	background: #EEEEEE;
+	font-size: 2vh;
+} #JOURNAL .notes {
+	padding: 0 1vh;
+}
+/* Full Screen */
+.fullscreen {
+	/*max-height: 80vh; set in screens.js*/
+	overflow-y: auto;
+}
+
+/* Alter list */
+#ALTERS img {
+	height: auto;
+	max-width: 100%;
+}
+#ALTERS.fullscreen {
+	display: grid;
+	place-items: center;
+	justify-content: space-around;
+	grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+	grid-gap: 3vw;
+	padding: 3vw;
+}/* .all * {
+	display: inline;
+	min-width: 100%;
+	max-width: 100%;
+	height: auto;
+}*/
+.line {
+	/* If is search mode */
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: flex-center;
+	overflow-x: scroll;
+	overflow-y: none;
+}
+/* Individuals */
+.alterDisplay {
+	font-size: 2vh;
+	margin: 1vw;
+	width: 100%;
+	text-align: center;
+}.alterDisplay * {
+	width: 100%;
+	min-width: 100%;
+	max-width: 100%;
+}.alterDisplay img {
+	height: auto;
+} .alterDisplay span {
+	padding: 1vw;
+	white-space: nowrap;
+	display: inline-block;
+}
+/* Alter Page(s) */
+#ALTER {
+}
+#ALTER .heading {
+	display: flex;
+	align-items: center;
+}
+#ALTER .icon {
+	flex: 0 0;
+	height: 15vh;
+	width: auto;
+	padding: 1vh;
+}
+#ALTER .name {
+	flex: 1 1;
+	font-size: 20vh;
+	white-space: nowrap;
+}
+#ALTER .description {
+	padding: 1vw;
+}
+
+* [contenteditable=true] {
+	background: #FFFFFF;
+	border: #000000 2px solid;
+	padding-left: 1vw;
+	padding-right: 1vw;
+}
+
+/* New Frontevent */
+.form input, .form #description {
+	border-radius: 5px;
+	border: 2px #777777 solid;
+	display: block;
+	margin: 1vh;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 2vh;
+} .form #datetime {
+	text-align: center;
+} .form #description {
+	width: 80%;
+	height: 30vh;
+	border-radius: 5px;
+	border: 2px #777777 solid;
+	resize: vertical;
+}
+
+/* Settings */
+#CREDITS .credit {
+	padding: 1vh;
+} #CREDITS .role, #CREDITS .name {
+	display: block;
+	text-align: center;
+} #CREDITS .role {
+	font-size: 2vh;
+}  #CREDITS .name {
+	font-weight: bold;
+	font-size: 3vh;
+}
+
+/* Messages */
+.messageBox {
+	display: flex;
+	justify-content: space-around;
+}
+.message {
+	display: inline-flex;
+	clear: both;
+	margin: 1vh;
+	margin-top: 2vh;
+} .message.left {
+	float: left;
+} .message.right {
+	float: right;
+	flex-direction: row-reverse;
+}
+.message > span {
+	font-size: 2vh;
+	margin: 0.5vh;
+	padding: 1vh;
+	background: #FFFFFF;
+	border-radius: 10px;
+}
+.message > .icon {
+	background: #FFFFFF;
+	height: 5vh;
+	width: auto;
+}

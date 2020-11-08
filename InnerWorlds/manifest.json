@@ -1,0 +1,32 @@
+{
+  "short_name": "InnerWorlds",
+  "name": "InnerWorlds",
+  "description": "InnerWorlds Application for DID/OSDD",
+  "icons": [
+    {
+      "src": "assets/graphic/app_icon.webp",
+      "type": "image/webp",
+      "sizes": "1024x1024"
+    },
+    {
+      "src": "assets/graphic/app_icon_180.webp",
+      "type": "image/webp",
+      "sizes": "180x180"
+    },
+    {
+      "src": "assets/graphic/app_icon.png",
+      "type": "image/png",
+      "sizes": "1024x1024"
+    },
+    {
+      "src": "assets/graphic/app_icon_180.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    }
+  ],
+  "start_url": "/",
+  "scope": "/",
+  "background_color": "#D2E6F9",
+  "theme_color": "#EEEEEE",
+  "display": "standalone"
+}
